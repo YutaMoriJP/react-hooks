@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import GlobalStyles from "./styled/GlobalStyle";
+import Container from "./styled/Container";
+import hooks from "./data/hooks";
+import Hook from "./Hooks/index";
+import Intro from "./Intro";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyles />
+      <Container>
+        <Intro>
+          Click on the `+` icon to learn more about the custom React hook. The
+          Demo involves an example of what the React hook achieves, and you can
+          see the source code by clicking on the CodeSandbox link.
+        </Intro>
+        {hooks.map((hook, index) => (
+          <Hook key={hook.id} index={index + 1} {...hook} />
+        ))}
+      </Container>
+    </>
   );
 }
-
-export default App;
