@@ -13,7 +13,7 @@ export default styled.article`
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin: 5px;
+    margin: 5px auto;
     @media screen and (max-width: 550px) {
       > * {
         margin: 5px;
