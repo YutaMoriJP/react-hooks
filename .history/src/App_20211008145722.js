@@ -23,7 +23,7 @@ const Message = () => {
                 Thanks for visting this page. The project is currently being
                 re-built as a library. The NPM page can be found{" "}
                 <a
-                  href="https://www.npmjs.com/package/kantan-hooks"
+                  href="https://www.npmjs.com/package/kantan-components"
                   target="_blank"
                   rel="noreferrer"
                 >

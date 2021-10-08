@@ -10,11 +10,13 @@ import { Text, Row } from "kantan-style";
 
 const Message = () => {
   const { open, onOpen, onClose } = useOpen();
+
   useEffect(() => {
     onOpen();
   }, [onOpen]);
   return (
     <>
+      {" "}
       {open ? (
         <Modal handleClose={onClose}>
           <div style={{ background: "white", borderRadius: "10px" }}>
@@ -23,7 +25,7 @@ const Message = () => {
                 Thanks for visting this page. The project is currently being
                 re-built as a library. The NPM page can be found{" "}
                 <a
-                  href="https://www.npmjs.com/package/kantan-hooks"
+                  href="https://www.npmjs.com/package/kantan-components"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -43,7 +45,6 @@ export default function App() {
   return (
     <>
       <GlobalStyles />
-      <Message />
       <Container>
         <Intro>
           Click on the `+` icon to learn more about the custom React hook. The
