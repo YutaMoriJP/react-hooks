@@ -21,9 +21,10 @@ const Message = () => {
             <Row justify="center" align="center">
               <Text style={{ lineHeight: "25px" }}>
                 Thanks for visting this page. The project is currently being
-                re-built as a library. The NPM page can be found{" "}
+                re-built as a library. The Docs are still work in progress, and
+                it can be found
                 <a
-                  href="https://www.npmjs.com/package/kantan-hooks"
+                  href="https://kantan-hooks-docs.netlify.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
